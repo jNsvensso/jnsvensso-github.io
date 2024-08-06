@@ -8,6 +8,13 @@
 <body>
   <header>
     <h1>{{ site.title }}</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/_pages/calculator.html' | relative_url }}">Calculator</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     {{ content }}
